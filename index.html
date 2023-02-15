@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas</title>
+    <link rel="stylesheet" href="kkk.css">
+    <link rel="shortcut icon" href="Design sem nome.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<script src="https://github.com/makeusabrew/bootbox/releases/download/v4.4.0/bootbox.min.js"></script>
+
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/Hammersmith One');
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-login">
+        <div class="left-login">
+            <h1 class="bv" >Bem Vindo(a) ao Atlas </h1>
+           <img src="diving-animate.svg" alt="" class="left-login-image" >
+        </div>
+        <div class="right-login">
+          
+            <div class="card-login">
+                <img class="logo" src="atlas2.png" alt="Logo Atlas">
+         
+            
+                <div class="textfield">
+                    <label for="Usuario">Usuário</label>
+                    <input type="text" placeholder="Usuário" name="sUsuário" id="login">
+                </div>
+                <div class="textfield">
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="Senha" placeholder="Senha" id="senha">
+                </div>
+                <button class="btn-login" onclick="Logar();return false"> Login</button>
+
+               <div class="Login-recused" > 
+                <a href="#">Criar Sua Conta |</a>
+                
+                <a href="#">Esqueceu sua Senha?</a>
+               </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function Logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            if (login == "freefire123" && senha == "reidaawm") {
+                alert('Sucesso')
+                location.href = "https://hoodshoop.com.br/";
+            } else {
+                bootbox.alert('Usuário ou Senha incorretos')
+            }
+        }
+    </script>
+
+
+
+
+    <script>
+ function typeWriter(elemento) {
+     const textoArray = elemento.innerHTML.split('');
+     elemento.innerHTML = '';
+     textoArray.forEach((letra, i) => {
+     setTimeout(() => elemento.innerHTML += letra, 75 * i);
+ });
+ }
+
+  const titulo = document.querySelector('h1');
+  typeWriter(titulo);
+
+    </script>
+
+    <footer class="rodape" >
+        <br>
+<hr>
+    <small>
+ <center> By Atlantis Corporation </center>
+
+    </small>
+</footer>
+</body>
+
+</html>

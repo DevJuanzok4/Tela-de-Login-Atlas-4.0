@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+body {
+margin:0;
+font-family: 'Hammersmith One', sans-serif;}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1b1E23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.left-login h1{
+ color: #4765ff;
+ font-size: 50px;
+ letter-spacing: 3px;
+ font-family: 'Hammersmith One', sans-serif;
+}
+
+.left-login-image{
+  width: 35vw;  
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #272c33;
+    border-radius:20px;
+    box-shadow: 0px 10px 40px #00000056;   
+}
+
+.card-login h2{
+    color: #4765ff; 
+    font-weight: 800;
+    font-size: 35px;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder{
+    color:#f0ffff94;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin:25px;
+    border:none;
+    border-radius: 8px;
+    outline: none;
+    text-transform:uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:#ffffff;
+    background: #4765ff;
+    cursor:pointer;
+    box-shadow: 0px 10px 40px -12px #3787ff52; 
+}
+.lnr-eye {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:950px){
+.card-login{
+    width:85%
+}
+
+}
+
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login h1{
+    display: none;
+    }
+    .left-login{
+        width:100%;
+        height: auto;
+    }
+    .right-login    {
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image {
+        width:50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
+
+a:active{
+    color: ghostwhite;
+}
+
+.a:link{
+   
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.a:hover{
+    color: aliceblue;
+}
+.a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.logo{
+   width: 180px;
+   height: 150px;
+
+}
+
+.rodape{
+    background-color: #1b1E23;
+}
+
+.rodape > small {
+    color: azure;
+
+}
+
+h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        }
+    }
+
+.Login-recused{
+    font-family: 'Hammersmith One', sans-serif;
+}
